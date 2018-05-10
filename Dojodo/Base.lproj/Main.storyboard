@@ -1,24 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkerFeltWide.ttf">
+            <string>MarkerFelt-Wide</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Dojodo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-Fq-6xl">
+                                <rect key="frame" x="16" y="292" width="343" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <state key="normal" title="LEARNING PLATFORM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlatformButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Li-Ff-coS"/>
+                                    <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToPlatform" id="ily-dp-M6a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDA-fb-6mr">
+                                <rect key="frame" x="16" y="193" width="343" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="FIND A DOJO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlatformButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2P-bB-2LJ"/>
+                                    <segue destination="MYv-GR-s1b" kind="presentation" identifier="FindADojo" id="SAm-eA-OcW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-j3-8xs">
+                                <rect key="frame" x="16" y="390" width="343" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <state key="normal" title="MATTERMOST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlatformButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hd-sp-HZc"/>
+                                    <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToMattermost" id="uei-dO-bOv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wxx-Tx-eHb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1008.8" y="32.833583208395808"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="j7D-qs-9Gb">
+            <objects>
+                <viewController id="d6l-nU-EAE" customClass="MapViewController" customModule="Dojodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjy-Jb-hLH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="18o-Rx-0Bh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="top" secondItem="qjy-Jb-hLH" secondAttribute="top" id="1yb-dX-XhP"/>
+                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="bottom" secondItem="V7e-IM-gpd" secondAttribute="bottom" id="2Iu-8S-d91"/>
+                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="leading" secondItem="V7e-IM-gpd" secondAttribute="leading" id="9aB-Mn-tTP"/>
+                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="trailing" secondItem="V7e-IM-gpd" secondAttribute="trailing" id="V14-Ft-pKM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V7e-IM-gpd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3NG-eM-Wz8">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="JSH-0i-fOC">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="d6l-nU-EAE" id="dwT-K4-Jyn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJh-Ys-emv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="33"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="lrL-PS-xo4">
+            <objects>
+                <viewController id="TXO-JU-hBI" customClass="WebViewController" customModule="Dojodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OWU-87-Fet">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRr-4f-aIx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JRr-4f-aIx" firstAttribute="leading" secondItem="pY7-wU-BXe" secondAttribute="leading" id="Keb-fR-rPT"/>
+                            <constraint firstItem="JRr-4f-aIx" firstAttribute="bottom" secondItem="pY7-wU-BXe" secondAttribute="bottom" id="ktW-lX-TJG"/>
+                            <constraint firstItem="JRr-4f-aIx" firstAttribute="top" secondItem="OWU-87-Fet" secondAttribute="top" id="sRN-TS-eE4"/>
+                            <constraint firstItem="JRr-4f-aIx" firstAttribute="trailing" secondItem="pY7-wU-BXe" secondAttribute="trailing" id="vpg-kn-mjq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pY7-wU-BXe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KPb-8c-Af4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="rul-Z9-QkV">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="TXO-JU-hBI" id="DBI-f2-sWQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="JRr-4f-aIx" id="HZp-ov-QV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voF-Li-fy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850" y="852"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yz0-pN-W3w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gtT-V7-5x5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H9Y-ho-8HJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TXO-JU-hBI" kind="relationship" relationship="rootViewController" id="0FG-ok-bna"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ML8-eG-Ml2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="853"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zIj-i3-stG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DWd-sP-e47" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="wYv-ak-l76">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="F92-gW-cx4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOD-ze-FCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="-717"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TAm-17-vE5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MYv-GR-s1b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VjV-7b-oyF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d6l-nU-EAE" kind="relationship" relationship="rootViewController" id="3iv-MD-eUb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXM-FJ-Aiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="33"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uei-dO-bOv"/>
+    </inferredMetricsTieBreakers>
 </document>

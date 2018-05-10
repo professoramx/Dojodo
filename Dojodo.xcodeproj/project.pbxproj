@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD83DBD520A4DEAD00855A06 /* WebViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83DBD420A4DEAD00855A06 /* WebViewControllerDelegate.swift */; };
+		DD83DBD720A4E13600855A06 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83DBD620A4E13600855A06 /* MapViewControllerDelegate.swift */; };
 		DDFA10E120A4CF1100C7601E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E020A4CF1100C7601E /* AppDelegate.swift */; };
-		DDFA10E320A4CF1100C7601E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E220A4CF1100C7601E /* ViewController.swift */; };
+		DDFA10E320A4CF1100C7601E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E220A4CF1100C7601E /* HomeViewController.swift */; };
 		DDFA10E620A4CF1100C7601E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E420A4CF1100C7601E /* Main.storyboard */; };
 		DDFA10E820A4CF1100C7601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E720A4CF1100C7601E /* Assets.xcassets */; };
 		DDFA10EB20A4CF1100C7601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E920A4CF1100C7601E /* LaunchScreen.storyboard */; };
 		DDFA10F620A4CF1100C7601E /* DojodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10F520A4CF1100C7601E /* DojodoTests.swift */; };
 		DDFA110120A4CF1200C7601E /* DojodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA110020A4CF1200C7601E /* DojodoUITests.swift */; };
+		DDFA110F20A4D09A00C7601E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA110E20A4D09A00C7601E /* WebViewController.swift */; };
+		DDFA111120A4DDA900C7601E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA111020A4DDA900C7601E /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD83DBD420A4DEAD00855A06 /* WebViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerDelegate.swift; sourceTree = "<group>"; };
+		DD83DBD620A4E13600855A06 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
 		DDFA10DD20A4CF1100C7601E /* Dojodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFA10E020A4CF1100C7601E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDFA10E220A4CF1100C7601E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDFA10E220A4CF1100C7601E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDFA10E520A4CF1100C7601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDFA10E720A4CF1100C7601E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFA10EA20A4CF1100C7601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		DDFA10FC20A4CF1200C7601E /* DojodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFA110020A4CF1200C7601E /* DojodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojodoUITests.swift; sourceTree = "<group>"; };
 		DDFA110220A4CF1200C7601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFA110E20A4D09A00C7601E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DDFA111020A4DDA900C7601E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				DDFA10E020A4CF1100C7601E /* AppDelegate.swift */,
-				DDFA10E220A4CF1100C7601E /* ViewController.swift */,
+				DDFA10E220A4CF1100C7601E /* HomeViewController.swift */,
 				DDFA10E420A4CF1100C7601E /* Main.storyboard */,
 				DDFA10E720A4CF1100C7601E /* Assets.xcassets */,
 				DDFA10E920A4CF1100C7601E /* LaunchScreen.storyboard */,
 				DDFA10EC20A4CF1100C7601E /* Info.plist */,
+				DDFA110E20A4D09A00C7601E /* WebViewController.swift */,
+				DDFA111020A4DDA900C7601E /* MapViewController.swift */,
+				DD83DBD420A4DEAD00855A06 /* WebViewControllerDelegate.swift */,
+				DD83DBD620A4E13600855A06 /* MapViewControllerDelegate.swift */,
 			);
 			path = Dojodo;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFA10E320A4CF1100C7601E /* ViewController.swift in Sources */,
+				DDFA10E320A4CF1100C7601E /* HomeViewController.swift in Sources */,
+				DDFA110F20A4D09A00C7601E /* WebViewController.swift in Sources */,
+				DD83DBD720A4E13600855A06 /* MapViewControllerDelegate.swift in Sources */,
+				DD83DBD520A4DEAD00855A06 /* WebViewControllerDelegate.swift in Sources */,
 				DDFA10E120A4CF1100C7601E /* AppDelegate.swift in Sources */,
+				DDFA111120A4DDA900C7601E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
