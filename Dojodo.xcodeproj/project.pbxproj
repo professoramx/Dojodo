@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDFA10E120A4CF1100C7601E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E020A4CF1100C7601E /* AppDelegate.swift */; };
+		DDFA10E320A4CF1100C7601E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E220A4CF1100C7601E /* ViewController.swift */; };
+		DDFA10E620A4CF1100C7601E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E420A4CF1100C7601E /* Main.storyboard */; };
+		DDFA10E820A4CF1100C7601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E720A4CF1100C7601E /* Assets.xcassets */; };
+		DDFA10EB20A4CF1100C7601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFA10E920A4CF1100C7601E /* LaunchScreen.storyboard */; };
+		DDFA10F620A4CF1100C7601E /* DojodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10F520A4CF1100C7601E /* DojodoTests.swift */; };
+		DDFA110120A4CF1200C7601E /* DojodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA110020A4CF1200C7601E /* DojodoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDFA10F220A4CF1100C7601E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDFA10D520A4CF1100C7601E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFA10DC20A4CF1100C7601E;
+			remoteInfo = Dojodo;
+		};
+		DDFA10FD20A4CF1200C7601E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDFA10D520A4CF1100C7601E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFA10DC20A4CF1100C7601E;
+			remoteInfo = Dojodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDFA10DD20A4CF1100C7601E /* Dojodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFA10E020A4CF1100C7601E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDFA10E220A4CF1100C7601E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDFA10E520A4CF1100C7601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDFA10E720A4CF1100C7601E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDFA10EA20A4CF1100C7601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDFA10EC20A4CF1100C7601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFA10F120A4CF1100C7601E /* DojodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFA10F520A4CF1100C7601E /* DojodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojodoTests.swift; sourceTree = "<group>"; };
+		DDFA10F720A4CF1100C7601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFA10FC20A4CF1200C7601E /* DojodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFA110020A4CF1200C7601E /* DojodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojodoUITests.swift; sourceTree = "<group>"; };
+		DDFA110220A4CF1200C7601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDFA10DA20A4CF1100C7601E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10EE20A4CF1100C7601E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10F920A4CF1200C7601E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDFA10D420A4CF1100C7601E = {
+			isa = PBXGroup;
+			children = (
+				DDFA10DF20A4CF1100C7601E /* Dojodo */,
+				DDFA10F420A4CF1100C7601E /* DojodoTests */,
+				DDFA10FF20A4CF1200C7601E /* DojodoUITests */,
+				DDFA10DE20A4CF1100C7601E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDFA10DE20A4CF1100C7601E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA10DD20A4CF1100C7601E /* Dojodo.app */,
+				DDFA10F120A4CF1100C7601E /* DojodoTests.xctest */,
+				DDFA10FC20A4CF1200C7601E /* DojodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDFA10DF20A4CF1100C7601E /* Dojodo */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA10E020A4CF1100C7601E /* AppDelegate.swift */,
+				DDFA10E220A4CF1100C7601E /* ViewController.swift */,
+				DDFA10E420A4CF1100C7601E /* Main.storyboard */,
+				DDFA10E720A4CF1100C7601E /* Assets.xcassets */,
+				DDFA10E920A4CF1100C7601E /* LaunchScreen.storyboard */,
+				DDFA10EC20A4CF1100C7601E /* Info.plist */,
+			);
+			path = Dojodo;
+			sourceTree = "<group>";
+		};
+		DDFA10F420A4CF1100C7601E /* DojodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA10F520A4CF1100C7601E /* DojodoTests.swift */,
+				DDFA10F720A4CF1100C7601E /* Info.plist */,
+			);
+			path = DojodoTests;
+			sourceTree = "<group>";
+		};
+		DDFA10FF20A4CF1200C7601E /* DojodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA110020A4CF1200C7601E /* DojodoUITests.swift */,
+				DDFA110220A4CF1200C7601E /* Info.plist */,
+			);
+			path = DojodoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDFA10DC20A4CF1100C7601E /* Dojodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFA110520A4CF1200C7601E /* Build configuration list for PBXNativeTarget "Dojodo" */;
+			buildPhases = (
+				DDFA10D920A4CF1100C7601E /* Sources */,
+				DDFA10DA20A4CF1100C7601E /* Frameworks */,
+				DDFA10DB20A4CF1100C7601E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dojodo;
+			productName = Dojodo;
+			productReference = DDFA10DD20A4CF1100C7601E /* Dojodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDFA10F020A4CF1100C7601E /* DojodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFA110820A4CF1200C7601E /* Build configuration list for PBXNativeTarget "DojodoTests" */;
+			buildPhases = (
+				DDFA10ED20A4CF1100C7601E /* Sources */,
+				DDFA10EE20A4CF1100C7601E /* Frameworks */,
+				DDFA10EF20A4CF1100C7601E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDFA10F320A4CF1100C7601E /* PBXTargetDependency */,
+			);
+			name = DojodoTests;
+			productName = DojodoTests;
+			productReference = DDFA10F120A4CF1100C7601E /* DojodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDFA10FB20A4CF1200C7601E /* DojodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFA110B20A4CF1200C7601E /* Build configuration list for PBXNativeTarget "DojodoUITests" */;
+			buildPhases = (
+				DDFA10F820A4CF1200C7601E /* Sources */,
+				DDFA10F920A4CF1200C7601E /* Frameworks */,
+				DDFA10FA20A4CF1200C7601E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDFA10FE20A4CF1200C7601E /* PBXTargetDependency */,
+			);
+			name = DojodoUITests;
+			productName = DojodoUITests;
+			productReference = DDFA10FC20A4CF1200C7601E /* DojodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDFA10D520A4CF1100C7601E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Abel Araya";
+				TargetAttributes = {
+					DDFA10DC20A4CF1100C7601E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DDFA10F020A4CF1100C7601E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDFA10DC20A4CF1100C7601E;
+					};
+					DDFA10FB20A4CF1200C7601E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDFA10DC20A4CF1100C7601E;
+					};
+				};
+			};
+			buildConfigurationList = DDFA10D820A4CF1100C7601E /* Build configuration list for PBXProject "Dojodo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDFA10D420A4CF1100C7601E;
+			productRefGroup = DDFA10DE20A4CF1100C7601E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDFA10DC20A4CF1100C7601E /* Dojodo */,
+				DDFA10F020A4CF1100C7601E /* DojodoTests */,
+				DDFA10FB20A4CF1200C7601E /* DojodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDFA10DB20A4CF1100C7601E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFA10EB20A4CF1100C7601E /* LaunchScreen.storyboard in Resources */,
+				DDFA10E820A4CF1100C7601E /* Assets.xcassets in Resources */,
+				DDFA10E620A4CF1100C7601E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10EF20A4CF1100C7601E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10FA20A4CF1200C7601E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDFA10D920A4CF1100C7601E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFA10E320A4CF1100C7601E /* ViewController.swift in Sources */,
+				DDFA10E120A4CF1100C7601E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10ED20A4CF1100C7601E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFA10F620A4CF1100C7601E /* DojodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFA10F820A4CF1200C7601E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFA110120A4CF1200C7601E /* DojodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDFA10F320A4CF1100C7601E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDFA10DC20A4CF1100C7601E /* Dojodo */;
+			targetProxy = DDFA10F220A4CF1100C7601E /* PBXContainerItemProxy */;
+		};
+		DDFA10FE20A4CF1200C7601E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDFA10DC20A4CF1100C7601E /* Dojodo */;
+			targetProxy = DDFA10FD20A4CF1200C7601E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDFA10E420A4CF1100C7601E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDFA10E520A4CF1100C7601E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDFA10E920A4CF1100C7601E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDFA10EA20A4CF1100C7601E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDFA110320A4CF1200C7601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDFA110420A4CF1200C7601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDFA110620A4CF1200C7601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = Dojodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.Dojodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDFA110720A4CF1200C7601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = Dojodo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.Dojodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDFA110920A4CF1200C7601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = DojodoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojodo.app/Dojodo";
+			};
+			name = Debug;
+		};
+		DDFA110A20A4CF1200C7601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = DojodoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojodo.app/Dojodo";
+			};
+			name = Release;
+		};
+		DDFA110C20A4CF1200C7601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = DojodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dojodo;
+			};
+			name = Debug;
+		};
+		DDFA110D20A4CF1200C7601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				INFOPLIST_FILE = DojodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dojodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDFA10D820A4CF1100C7601E /* Build configuration list for PBXProject "Dojodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFA110320A4CF1200C7601E /* Debug */,
+				DDFA110420A4CF1200C7601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFA110520A4CF1200C7601E /* Build configuration list for PBXNativeTarget "Dojodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFA110620A4CF1200C7601E /* Debug */,
+				DDFA110720A4CF1200C7601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFA110820A4CF1200C7601E /* Build configuration list for PBXNativeTarget "DojodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFA110920A4CF1200C7601E /* Debug */,
+				DDFA110A20A4CF1200C7601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFA110B20A4CF1200C7601E /* Build configuration list for PBXNativeTarget "DojodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFA110C20A4CF1200C7601E /* Debug */,
+				DDFA110D20A4CF1200C7601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDFA10D520A4CF1100C7601E /* Project object */;
+}
