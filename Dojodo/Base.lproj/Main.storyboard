@@ -10,6 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+            <string>ChalkboardSE-Regular</string>
+        </array>
         <array key="MarkerFeltWide.ttf">
             <string>MarkerFelt-Wide</string>
         </array>
@@ -24,10 +28,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-Fq-6xl">
-                                <rect key="frame" x="16" y="292" width="343" height="82"/>
+                                <rect key="frame" x="0.0" y="475" width="375" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <color key="backgroundColor" red="0.23614504933357239" green="0.68275213241577148" blue="0.8177640438079834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
                                 <state key="normal" title="LEARNING PLATFORM">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,14 +41,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDA-fb-6mr">
-                                <rect key="frame" x="16" y="193" width="343" height="82"/>
+                                <rect key="frame" x="0.0" y="327" width="375" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <color key="backgroundColor" red="0.23614504933357239" green="0.68275213241577148" blue="0.8177640438079834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="FIND A DOJO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="goToPlatformButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2P-bB-2LJ"/>
@@ -52,11 +55,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-j3-8xs">
-                                <rect key="frame" x="16" y="390" width="343" height="82"/>
+                                <rect key="frame" x="361" y="647" width="14" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.24431076230000001" green="0.26691160590000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.23614504929999999" green="0.68275213239999999" blue="0.81776404380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                <state key="normal" title="MATTERMOST">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -64,15 +67,18 @@
                                     <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToMattermost" id="uei-dO-bOv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_20180510_202630" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-qg-Etg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wxx-Tx-eHb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.8" y="32.833583208395808"/>
+            <point key="canvasLocation" x="1007.2" y="31.934032983508249"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="j7D-qs-9Gb">
@@ -82,13 +88,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="18o-Rx-0Bh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="18o-Rx-0Bh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="524" id="rnw-wD-rea"/>
+                                </constraints>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dojo" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-Ph-QDb">
+                                <rect key="frame" x="51" y="72" width="273" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="top" secondItem="qjy-Jb-hLH" secondAttribute="top" id="1yb-dX-XhP"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="bottom" secondItem="V7e-IM-gpd" secondAttribute="bottom" id="2Iu-8S-d91"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="leading" secondItem="V7e-IM-gpd" secondAttribute="leading" id="9aB-Mn-tTP"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="trailing" secondItem="V7e-IM-gpd" secondAttribute="trailing" id="V14-Ft-pKM"/>
@@ -108,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJh-Ys-emv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="33"/>
+            <point key="canvasLocation" x="2728.8000000000002" y="32.833583208395808"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="lrL-PS-xo4">
@@ -206,6 +218,10 @@
             <point key="canvasLocation" x="1849" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_20180510_202630" width="3944" height="2813"/>
+        <image name="dojo" width="402" height="125"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uei-dO-bOv"/>
     </inferredMetricsTieBreakers>
