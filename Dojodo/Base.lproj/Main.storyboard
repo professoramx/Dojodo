@@ -54,10 +54,6 @@
                                     <segue destination="MYv-GR-s1b" kind="presentation" identifier="FindADojo" id="SAm-eA-OcW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_20180510_202630" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-qg-Etg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-j3-8xs">
                                 <rect key="frame" x="361" y="647" width="14" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,6 +67,10 @@
                                     <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToMattermost" id="uei-dO-bOv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_20180510_202630" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-qg-Etg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.8" y="32.833583208395808"/>
+            <point key="canvasLocation" x="1007.2" y="31.934032983508249"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="j7D-qs-9Gb">
@@ -88,13 +88,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="18o-Rx-0Bh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="18o-Rx-0Bh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="524" id="rnw-wD-rea"/>
+                                </constraints>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dojo" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-Ph-QDb">
+                                <rect key="frame" x="51" y="72" width="273" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="18o-Rx-0Bh" firstAttribute="top" secondItem="qjy-Jb-hLH" secondAttribute="top" id="1yb-dX-XhP"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="bottom" secondItem="V7e-IM-gpd" secondAttribute="bottom" id="2Iu-8S-d91"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="leading" secondItem="V7e-IM-gpd" secondAttribute="leading" id="9aB-Mn-tTP"/>
                             <constraint firstItem="18o-Rx-0Bh" firstAttribute="trailing" secondItem="V7e-IM-gpd" secondAttribute="trailing" id="V14-Ft-pKM"/>
@@ -114,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJh-Ys-emv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="33"/>
+            <point key="canvasLocation" x="2728.8000000000002" y="32.833583208395808"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="lrL-PS-xo4">
@@ -214,6 +220,7 @@
     </scenes>
     <resources>
         <image name="IMG_20180510_202630" width="3944" height="2813"/>
+        <image name="dojo" width="402" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uei-dO-bOv"/>

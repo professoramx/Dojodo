@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AB710820A57E5000B1ACFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AB710720A57E5000B1ACFD /* LaunchScreen.storyboard */; };
 		DD83DBD520A4DEAD00855A06 /* WebViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83DBD420A4DEAD00855A06 /* WebViewControllerDelegate.swift */; };
 		DD83DBD720A4E13600855A06 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83DBD620A4E13600855A06 /* MapViewControllerDelegate.swift */; };
 		DDFA10E120A4CF1100C7601E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA10E020A4CF1100C7601E /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9AB710720A57E5000B1ACFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD83DBD420A4DEAD00855A06 /* WebViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerDelegate.swift; sourceTree = "<group>"; };
 		DD83DBD620A4E13600855A06 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
 		DDFA10DD20A4CF1100C7601E /* Dojodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 		DDFA10D420A4CF1100C7601E = {
 			isa = PBXGroup;
 			children = (
+				D9AB710720A57E5000B1ACFD /* LaunchScreen.storyboard */,
 				DDFA10DF20A4CF1100C7601E /* Dojodo */,
 				DDFA10F420A4CF1100C7601E /* DojodoTests */,
 				DDFA10FF20A4CF1200C7601E /* DojodoUITests */,
@@ -246,6 +249,7 @@
 			files = (
 				DDFA10EB20A4CF1100C7601E /* LaunchScreen.storyboard in Resources */,
 				DDFA10E820A4CF1100C7601E /* Assets.xcassets in Resources */,
+				D9AB710820A57E5000B1ACFD /* LaunchScreen.storyboard in Resources */,
 				DDFA10E620A4CF1100C7601E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +478,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				DEVELOPMENT_TEAM = FW746YS542;
 				INFOPLIST_FILE = DojodoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoTests;
@@ -491,7 +495,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				DEVELOPMENT_TEAM = FW746YS542;
 				INFOPLIST_FILE = DojodoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoTests;
@@ -507,7 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				DEVELOPMENT_TEAM = FW746YS542;
 				INFOPLIST_FILE = DojodoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoUITests;
@@ -523,7 +527,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6BSRYJ5KBJ;
+				DEVELOPMENT_TEAM = FW746YS542;
 				INFOPLIST_FILE = DojodoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingDojo.DojodoUITests;

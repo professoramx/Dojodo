@@ -82,10 +82,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         print("Last location: \(lastLocation.coordinate)")
         // Do something with the location.
         
-//        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(25, 25)
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
-//        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
-//        map.setRegion(region, animated: true)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        map.setRegion(region, animated: true)
         
         self.map.showsUserLocation = true
     }
@@ -115,9 +115,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         map.addAnnotation(losAngeles)
         map.addAnnotation(chicago)
         map.addAnnotation(eastBay)
-        
         map.addAnnotations([sanJose, seattle, losAngeles, chicago, eastBay])
-    
+        
+        
         func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -125,6 +125,64 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     
 }
+//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+//        if annotation is MKUserLocation {
+//            return nil
+//        }
+//
+//        let identifier = "MyCustomAnnotation"
+//
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//        if annotationView == nil {
+//            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//            annotationView?.canShowCallout = true
+//        } else {
+//            annotationView!.annotation = annotation
+//        }
+//
+//        configureDetailView(annotationView: annotationView!)
+//
+//        return annotationView
+//    }
+//
+//    func configureDetailView(annotationView: MKAnnotationView) {
+//        let width = 300
+//        let height = 200
+//
+//        let snapshotView = UIView()
+//        let views = ["snapshotView": snapshotView]
+//        snapshotView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[snapshotView(300)]", options: [], metrics: nil, views: views))
+//        snapshotView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[snapshotView(200)]", options: [], metrics: nil, views: views))
+//
+//        let options = MKMapSnapshotOptions()
+//        options.size = CGSize(width: width, height: height)
+//        options.mapType = .satelliteFlyover
+//        options.camera = MKMapCamera(lookingAtCenterCoordinate: annotationView.annotation!.coordinate, fromDistance: 250, pitch: 65, heading: 0)
+//
+//        let snapshotter = MKMapSnapshotter(options: options)
+//        snapshotter.start { snapshot, error in
+//            if snapshot != nil {
+//                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+//                imageView.image = snapshot!.image
+//                snapshotView.addSubview(imageView)
+//            }
+//        }
+//
+//        annotationView.detailCalloutAccessoryView = snapshotView
+//    }
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        let calloutView = ...
+            calloutView.translatesAutoresizingMaskIntoConstraints = false
+        calloutView.backgroundColor = UIColor.lightGrayColor()
+        view.addSubview(calloutView)
+        
+        NSLayoutConstraint.activateConstraints([
+            calloutView.bottomAnchor.constraintEqualToAnchor(view.topAnchor, constant: 0),
+            calloutView.widthAnchor.constraintEqualToConstant(60),
+            calloutView.heightAnchor.constraintEqualToConstant(30),
+            calloutView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor, constant: view.calloutOffset.x)
+            ])
+    }
 }
 
 
