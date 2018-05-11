@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+//import DetailViewController
 
 class DojoLocation: NSObject, MKAnnotation {
     var title: String?
@@ -26,6 +27,7 @@ class DojoLocation: NSObject, MKAnnotation {
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     let locationManager = CLLocationManager()
+    var zoomed: Bool = false
     
     //Map
     @IBOutlet weak var map: MKMapView!
@@ -80,13 +82,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
         let lastLocation = locations.last!
         print("Last location: \(lastLocation.coordinate)")
-        // Do something with the location.
         
-        let span: MKCoordinateSpan = MKCoordinateSpanMake(25, 25)
-        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
-        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
-        self.map.showsUserLocation = true
-//        map.setRegion(region, animated: true)
+        
+        if !zoomed {
+            zoomOnce(locations)
+            zoomed = true
+        }
         
         
     }
@@ -119,31 +120,76 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.addAnnotations([sanJose, seattle, losAngeles, chicago, eastBay])
         
         
-        func didReceiveMemoryWarning() {
+    }
+    let ann = MKPointAnnotation()
+    self.ann.coordinate = annLoc
+    self.ann.title = "Customize me"
+    self.ann.subtitle = "???"
+    self.mapView.addAnnotation(ann)
+    
+    
+    func zoomOnce(_ locations: [CLLocation]) {
+        let lastLocation = locations.last!
+        
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(5, 5)
+        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        self.map.showsUserLocation = true
+        map.setRegion(region, animated: true)
+    }
+        
+        
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+            
     }
-
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        let identifier = "MyCustomAnnotation"
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+        } else {
+            annotationView!.annotation = annotation
+        }
+        
+        configureDetailView(annotationView: annotationView!)
+        
+        return annotationView
+    }
+    
+    func configureDetailView(annotationView: MKAnnotationView) {
+        let width = 300
+        let height = 200
+        
+        let snapshotView = UIView()
+        let views = ["snapshotView": snapshotView]
+        snapshotView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[snapshotView(300)]", options: [], metrics: nil, views: views))
+        snapshotView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[snapshotView(200)]", options: [], metrics: nil, views: views))
+        
+        let options = MKMapSnapshotOptions()
+        options.size = CGSize(width: width, height: height)
+        options.mapType = .satelliteFlyover
+        options.camera = MKMapCamera(lookingAtCenter: annotationView.annotation!.coordinate, fromDistance: 250, pitch: 65, heading: 0)
+        
+        let snapshotter = MKMapSnapshotter(options: options)
+        snapshotter.start { snapshot, error in
+            if snapshot != nil {
+                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+                imageView.image = snapshot!.image
+                snapshotView.addSubview(imageView)
+            }
+        }
+        
+        annotationView.detailCalloutAccessoryView = snapshotView
+    }
     
 }
-//    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//        if control == view.rightCalloutAccessoryView {
-//            performSegue(withIdentifier: "Seattle", sender: view)
-//        }
-//    }
-//
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if (segue.identifier == "Seattle" )
-//        {
-//            var ikinciEkran = segue.destinationViewController as! DetailViewController
-//
-//            ikinciEkran.tekelName = (sender as! MKAnnotationView).annotation!.title
-//
-//        }
-//
-//    }
-   
-}
-
 
 
