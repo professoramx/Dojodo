@@ -27,10 +27,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-Fq-6xl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-Fq-6xl">
                                 <rect key="frame" x="0.0" y="475" width="375" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23614504933357239" green="0.68275213241577148" blue="0.8177640438079834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="7gU-4M-VdD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
                                 <state key="normal" title="LEARNING PLATFORM">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,9 +42,8 @@
                                     <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToPlatform" id="ily-dp-M6a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDA-fb-6mr">
-                                <rect key="frame" x="0.0" y="327" width="375" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDA-fb-6mr">
+                                <rect key="frame" x="0.0" y="327" width="375" height="148"/>
                                 <color key="backgroundColor" red="0.23614504933357239" green="0.68275213241577148" blue="0.8177640438079834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -54,9 +55,8 @@
                                     <segue destination="MYv-GR-s1b" kind="presentation" identifier="FindADojo" id="SAm-eA-OcW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-j3-8xs">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-j3-8xs">
                                 <rect key="frame" x="361" y="647" width="14" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23614504929999999" green="0.68275213239999999" blue="0.81776404380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
                                 <state key="normal">
@@ -67,11 +67,27 @@
                                     <segue destination="gtT-V7-5x5" kind="presentation" identifier="GoToMattermost" id="uei-dO-bOv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_20180510_202630" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-qg-Etg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_20180510_202630" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-qg-Etg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="NB3-Yq-wKi"/>
+                                </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="8vy-qg-Etg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A0d-xm-hXL"/>
+                            <constraint firstItem="oAe-Fq-6xl" firstAttribute="top" secondItem="cDA-fb-6mr" secondAttribute="bottom" id="Cip-gN-fgB"/>
+                            <constraint firstItem="cDA-fb-6mr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="263" id="FSz-AI-kww"/>
+                            <constraint firstItem="8vy-qg-Etg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FYn-jU-QBW"/>
+                            <constraint firstItem="cDA-fb-6mr" firstAttribute="trailing" secondItem="oAe-Fq-6xl" secondAttribute="trailing" id="Iaa-ry-Jci"/>
+                            <constraint firstItem="cDA-fb-6mr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="263" id="JAO-M2-bIf"/>
+                            <constraint firstItem="oAe-Fq-6xl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JfB-Qn-iOD"/>
+                            <constraint firstItem="cDA-fb-6mr" firstAttribute="leading" secondItem="oAe-Fq-6xl" secondAttribute="leading" id="Jwa-EW-c6k"/>
+                            <constraint firstItem="8vy-qg-Etg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oo7-BU-Pcz"/>
+                            <constraint firstItem="oAe-Fq-6xl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P0N-yj-BTI"/>
+                            <constraint firstItem="cDA-fb-6mr" firstAttribute="trailing" secondItem="bji-j3-8xs" secondAttribute="trailing" id="Tst-Lq-QmN"/>
+                            <constraint firstItem="oAe-Fq-6xl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="moq-v3-j9h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wxx-Tx-eHb"/>

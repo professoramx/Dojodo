@@ -121,13 +121,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.addAnnotation(eastBay)
         map.addAnnotations([sanJose, seattle, losAngeles, chicago, eastBay])
         
+        map.delegate = self
+        
         
     }
-    let ann = MKPointAnnotation()
-    self.ann.coordinate = annLoc
-    self.ann.title = "Customize me"
-    self.ann.subtitle = "???"
-    self.mapView.addAnnotation(ann)
+//    let ann = MKPointAnnotation()
+//    self.ann.coordinate = annLoc
+//    self.ann.title = "Customize me"
+//    self.ann.subtitle = "???"
+//    self.mapView.addAnnotation(ann)
     
     
     func zoomOnce(_ locations: [CLLocation]) {
@@ -190,6 +192,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         
         annotationView.detailCalloutAccessoryView = snapshotView
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation { return nil }
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "") as? MKPinAnnotationView
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "")
+            annotationView?.canShowCallout = true
+            annotationView?.rightCalloutAccessoryView = UIButton(type: .infoLight)
+        } else {
+            annotationView?.annotation = annotation
+        }
+        
+        return annotationView
     }
     
 }
