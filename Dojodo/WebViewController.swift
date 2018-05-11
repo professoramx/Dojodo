@@ -21,7 +21,7 @@ class WebViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadPage()
+//        self.loadPage()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -32,13 +32,21 @@ class WebViewController: UIViewController, WKUIDelegate {
         view = webView
     }
     
-    func loadPage() {
-        if let dest = self.destination {
-            if let url = URL(string: dest) {
-                let request = URLRequest(url: url)
-                self.webView?.load(request)
-            }
-        }
+//    func loadPage() {
+//        if let dest = self.destination {
+//            if let url = URL(string: dest) {
+//                let request = URLRequest(url: url)
+//                self.webView?.load(request)
+//            }
+//        }
+//    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear( animated )
+        
+        let url: URL = URL(string: "https://www.codingdojo.com/coding-schools")!
+        let urlRequest:URLRequest = URLRequest(url: url)
+        webView.load(urlRequest)
     }
     
     override func didReceiveMemoryWarning() {
