@@ -10,6 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
+class DojoLocation: NSObject, MKAnnotation {
+    var title: String?
+    var coordinate: CLLocationCoordinate2D
+    
+    
+    init(title: String, coordinate: CLLocationCoordinate2D) {
+        self.title = title
+        self.coordinate = coordinate
+    }
+}
+
+
+
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
@@ -69,10 +82,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         print("Last location: \(lastLocation.coordinate)")
         // Do something with the location.
         
-        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+//        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
-        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
-        map.setRegion(region, animated: true)
+//        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+//        map.setRegion(region, animated: true)
         
         self.map.showsUserLocation = true
     }
@@ -91,14 +104,27 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         enableBasicLocationServices()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        let sanJose=DojoLocation(title: "San Jose", coordinate: CLLocationCoordinate2D(latitude: 37.375681, longitude: -121.910169))
+        let seattle = DojoLocation(title: "Seattle", coordinate: CLLocationCoordinate2D(latitude: 47.610054, longitude: -122.196540))
+        let losAngeles = DojoLocation(title: "Los Angeles", coordinate: CLLocationCoordinate2D(latitude: 34.181074, longitude: -118.309180))
+        let chicago = DojoLocation(title: "Chicago", coordinate: CLLocationCoordinate2D(latitude: 41.897440, longitude: -87.635208))
+        let eastBay = DojoLocation(title: "East Bay", coordinate: CLLocationCoordinate2D(latitude: 37.842194, longitude:-122.293837))
+        
+        map.addAnnotation(sanJose)
+        map.addAnnotation(seattle)
+        map.addAnnotation(losAngeles)
+        map.addAnnotation(chicago)
+        map.addAnnotation(eastBay)
+        
+        map.addAnnotations([sanJose, seattle, losAngeles, chicago, eastBay])
     
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
-    
+}
 }
 
 
