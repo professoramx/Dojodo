@@ -102,6 +102,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="map" destination="18o-Rx-0Bh" id="K6U-3b-oZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJh-Ys-emv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
