@@ -77,6 +77,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.map.showsUserLocation = true
     }
     
+
+    
     //////////////////////////////////////////////////////////
     
     
